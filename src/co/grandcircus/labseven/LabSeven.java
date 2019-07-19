@@ -16,8 +16,8 @@ public class LabSeven {
 		System.out.println(Verizon);
 		String output = valiDate(scnr);
 		System.out.println(output);
-		/*String html = validHTML(scnr);
-		System.out.println(html);*/
+		String html = validHTML(scnr);
+		System.out.println(html);
 		
 		scnr.close();
 		
@@ -82,7 +82,7 @@ public class LabSeven {
 		String userCall;
 		
 		do {
-			System.out.println("Enter a valid phone number in the format '(XXX) XXX XXXX)' ");
+			System.out.println("Enter a valid phone number in the format '(XXX) XXX XXXX' ");
 			userCall = scnr.nextLine();
 			
 			if (userCall.matches("[(]\\d{3}[)] \\d{3} \\d{4}")) {
@@ -121,7 +121,7 @@ public class LabSeven {
 			return end;
 	}
 	
-	/*private static String validHTML(Scanner scnr) {
+	private static String validHTML(Scanner scnr) {
 		
 		boolean isAllowed = false;
 		String htmlForm;
@@ -142,7 +142,7 @@ public class LabSeven {
 		} while (!isAllowed);
 			String complete = "Goodbye. ";
 			return complete;
-	}*/
+	}
 }
 
 		
